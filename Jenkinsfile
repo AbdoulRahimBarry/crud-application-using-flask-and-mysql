@@ -11,12 +11,12 @@ pipeline {
                 sh 'csslint  \${WORKSPACE}/source_code/static/css/dataTables.bootstrap.css'
             }
         }
-		stage('Check python syntax') {
+		/*stage('Check python syntax') {
 		    agent { docker { image 'eeacms/pylint' } }
 			steps {
 			    sh 'pylint  \${WORKSPACE}/source_code/module/database.py'
 			}
-		}
+		}*/
         stage('Check bash syntax') {
             agent { docker { image 'koalaman/shellcheck-alpine:stable' } }
             steps {
