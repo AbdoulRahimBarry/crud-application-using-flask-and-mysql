@@ -17,10 +17,11 @@ pipeline {
 			    sh 'pylint  \${WORKSPACE}/source_code/module/database.py'
 			}
 		}*/
-		stage('Check Dockerfile syntax') {
+		stage('Check Dockerfile and Dockerfile-mysql yntax') {
 		    agent { docker { image 'hadolint/hadolint' } }
 			steps {
 			    sh 'hadolint \${WORKSPACE}/Dockerfile-app'
+                            sh 'hadolint \${WORKSPACE}/Dockerfile-mysql'
 			}
 		}
         stage('Check bash syntax') {
