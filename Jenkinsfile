@@ -1,4 +1,5 @@
-brary('jenkins-shared-library')_
+/* import shared library */
+@Library('jenkins-shared-library')_
 
 pipeline {
     agent none
@@ -22,7 +23,7 @@ pipeline {
          /* Use slackNotifier.groovy from shared library and provide current build result as parameter */
          clean
          slackNotifier currentBuild.result
-     }
     }
-    }
+   }
+  }
 }
