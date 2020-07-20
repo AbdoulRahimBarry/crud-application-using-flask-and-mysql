@@ -8,6 +8,7 @@ pipeline {
             agent { docker { image 'eeacms/csslint' } }
             steps {
                 sh 'csslint  \${WORKSPACE}/source_code/static/css/_all-skins.min.css'
+                sh 'csslint  \${WORKSPACE}/source_code/static/css/bootstrap.min.css'
             }
         }
         stage('Check bash syntax') {
