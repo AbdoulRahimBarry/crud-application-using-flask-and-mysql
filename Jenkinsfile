@@ -7,7 +7,7 @@ pipeline {
         stage('Check css syntax') {
             agent { docker { image 'eeacms/csslint' } }
             steps {
-                sh 'csslint  \${WORKSPACE}/battleboat/css/styles.css'
+                sh 'csslint  \${WORKSPACE}/source_code/static/css/AdminLTE.min.css'
             }
         }
         stage('Check bash syntax') {
