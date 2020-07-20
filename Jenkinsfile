@@ -14,7 +14,7 @@ pipeline {
 		stage('Check python syntax') {
 		    agent { docker { image 'eeacms/pylint' } }
 			steps {
-			    sh 'pylint  \${WORKSPACE}/source_code/server.py'
+			    sh 'pylint  \${WORKSPACE}/source_code/module/database.py'
 			}
 		}
         stage('Check bash syntax') {
