@@ -20,4 +20,4 @@ To destroy the containers, execute:
 
 ```
 docker-compose down --rmi all
-```
+```.....
