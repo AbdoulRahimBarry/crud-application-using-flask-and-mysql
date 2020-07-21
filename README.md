@@ -1,8 +1,6 @@
 # crud-application-using-flask-and-mysql
 A simple CRUD application using Flask and MySQL
 
-[![Build Status](http://100.25.140.85/buildStatus/icon?job=crud-application-using-flask-and-mysql-ci)](http://100.25.140.85/job/crud-application-using-flask-and-mysql-ci/)
-
 ### Built With
 
 * Python
