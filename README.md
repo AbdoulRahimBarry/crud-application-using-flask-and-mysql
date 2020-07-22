@@ -1,7 +1,7 @@
 # crud-application-using-flask-and-mysql
 A simple CRUD application using Flask and MySQL
 
-[![Build Status](http://100.25.140.85/buildStatus/icon?job=crud-application-using-flask-and-mysql-ci)](http://100.25.140.85/job/crud-application-using-flask-and-mysql-ci/)
+[![Build Status](http://ec2-54-161-240-27.compute-1.amazonaws.com/buildStatus/icon?job=crud-application-using-flask-and-mysql-ci)](http://ec2-54-161-240-27.compute-1.amazonaws.com/job/crud-application-using-flask-and-mysql-ci/)
 
 ### Built With.
 
